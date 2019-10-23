@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+//function declaration/prototype
+void travel(float,float);
+const float x=0.264179;
+
+int main()
+{
+  cout<<"Program to compute the number of kilometres per gallons."<<endl;
+	float litres=0,km=0;
+	cout << "Enter number of litres used: " << endl;
+	cin>>litres;
+	cout << "Enter number of kilometres travelled: " << endl;
+	cin>>km;
+	travel(litres,km); //function call
+	return 0;
+
+}
+
+//define function
+void travel(float litres, float km)
+{
+  
+	float gallons = litres*x;
+	float kmg = km / gallons;
+
+	cout << "Kilometre travlled per gallon: " << kmg << endl;
+
+}
