@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+//function declaration/prototype
+void swap(float, float);
+
+int main()
+{
+float x = 3, y = 4;
+cout << "The original value of X: " << x << endl;
+cout << "The original value of Y: " << y << endl;
+swap(x, y); //function call
+return 0;
+
+}
+
+//define function
+void swap(float x, float y)
+{
+float temp;
+temp = x;
+x = y;
+y = temp;
+
+cout << "New value of X: " << x << endl;
+cout << "New value of Y: " << y << endl;
+
+}
